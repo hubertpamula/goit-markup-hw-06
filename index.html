@@ -72,7 +72,64 @@
                 <use href="./images/icons.svg#icon-close"></use>
               </svg>
             </button>
-            <div class="modal-content"></div>
+            <div class="modal-content">
+              <h3 class="modal-header">
+                Zostaw swoje dane w formularzu poniżej
+              </h3>
+              <form class="my-form">
+                <fieldset class="fieldset">
+                  <label class="label" for="name">Imie</label>
+                  <svg class="icon">
+                    <use href="./images/icons.svg#icon-user"></use>
+                  </svg>
+                  <input class="input" type="text" id="name" />
+                </fieldset>
+
+                <fieldset class="fieldset">
+                  <label class="label" for="phone">Telefon</label>
+                  <svg class="icon">
+                    <use href="./images/icons.svg#icon-phone"></use>
+                  </svg>
+                  <input class="input" type="tel" id="phone" />
+                </fieldset>
+
+                <fieldset class="fieldset">
+                  <label class="label" for="email">Email</label>
+                  <svg class="icon">
+                    <use href="./images/icons.svg#icon-mail"></use>
+                  </svg>
+                  <input class="input" type="email" id="email" />
+                </fieldset>
+
+                <fieldset class="fieldset big-fieldset">
+                  <label class="label" for="name">Komentarz</label>
+
+                  <textarea
+                    rows="7"
+                    class="input big-input"
+                    placeholder="Wprowadź tekst"
+                    type="text"
+                  ></textarea>
+                </fieldset>
+
+                <div class="checkbox-wrapper">
+                  <label class="checkbox-label">
+                    <input class="checkbox" type="checkbox" />
+                    <span>
+                      <svg width="13" height="10">
+                        <use href="./images/icons.svg#checkbox"></use>
+                      </svg>
+                    </span>
+                  </label>
+
+                  <span class="checkbox-des"
+                    >Oświadczam iż akceptuję <a href="#">Regulamin</a> i
+                    <a href="#">Politykę Prywatności.</a></span
+                  >
+                </div>
+                <input class="modem-btn" type="submit" value="Wyślij" />
+              </form>
+            </div>
           </div>
         </div>
       </section>
@@ -446,6 +503,16 @@
             </li>
           </ul>
         </div>
+        <form class="footer-form">
+          <label class="footer-label">
+            Zapisz się do newslettera
+            <input class="footer-inp" placeholder="E-mail" type="email" />
+            <input class="footer-btn" type="submit" value="Zapisz sie " />
+            <svg class="icon-send-footer" width="20" height="20">
+              <use href="./images/icons.svg#icon-send"></use>
+            </svg>
+          </label>
+        </form>
       </div>
     </footer>
     <script src="./js/modal.js"></script>
