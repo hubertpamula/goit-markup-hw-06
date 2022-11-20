@@ -57,6 +57,16 @@ h1 {
 .fieldset:has(textarea:focus) {
   border-color: var(--blue-color);
 }
+
+.fieldset:has(input:hover) {
+  border-color: var(--blue-color);
+}
+.fieldset:has(input:hover) .icon {
+  fill: var(--blue-color);
+}
+.fieldset:has(textarea:hover) {
+  border-color: var(--blue-color);
+}
 .fieldset {
   display: flex;
   position: relative;
