@@ -74,6 +74,7 @@ h1 {
   padding: 12px 16px;
   width: 418px;
   height: 96px;
+  resize: none;
 }
 .big-fieldset {
   width: 448px;
@@ -85,21 +86,31 @@ h1 {
   justify-content: center;
 }
 .checkbox {
-  position: absolute;
-  margin: 0;
-  width: 13px;
-  height: 10px;
+  display: none;
 }
+.checkbox-label:has(.checkbox:checked) .bird {
+  border-color: var(--blue-color);
+  background-color: var(--blue-color);
+}
+.bird {
+  border: 2px solid rgba(33, 33, 33, 1);
+  border-radius: 2px;
+  margin-right: 8px;
+}
+.checkbox-span {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  font-size: 14px;
+  color: var(--description-color);
+}
+
 .checkbox-label {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.checkbox-des {
-  margin-left: 8px;
-  font-size: 14px;
-  color: var(--description-color);
 }
 .checkbox-des a {
   color: var(--blue-color);
